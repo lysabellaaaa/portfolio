@@ -1576,10 +1576,9 @@ footer {
       <div class="card-org">Research Mentee · Mentor: Allen Lu (Sentient Futures / Electric Sheep) · <span class="gold">SPAR Spring 2026</span></div>
       <p class="card-desc">Dynamic multi-turn benchmark evaluating frontier models on animal welfare reasoning under escalating adversarial pressure. Targeting submission to <strong class="gold">Inspect Evals (UK AISI)</strong>; outputs feed into model specifications and training interventions at frontier labs.</p>
       <ul class="card-bullets">
-        <li>Benchmarked <strong>Claude and GPT-4</strong> on AnimalHarmBench across <strong class="gold">13 welfare dimensions</strong>, identifying structural failure modes of single-turn eval design</li>
-        <li>Operated an <strong>end-to-end multi-turn eval pipeline</strong> with escalating economic, social, and authority pressure across 2–4 turns</li>
-        <li>Refactored codebase to <strong>Inspect (UK AISI)</strong> contribution standards — meeting submission criteria for the UK Safety Institute</li>
-        <li>Synced contributions to the <strong>HuggingFace dataset repo</strong> and validated full pipeline evals per scenario</li>
+        <li>Engineered an LLM-based scenario generation pipeline following ARENA dataset quality control standards, adapting ARENA's MCQ-oriented framework to open-ended adversarial welfare scenarios; implemented iterative rubric design for automated quality filtering, integrated manually curated few-shot exemplars to control output style and length distribution, and validated ~300 generated scenarios against benchmark contribution criteria</li>
+        <li>Refactored the dataset generation pipeline for reproducibility and robustness, eliminating auto-generated few-shot prompting in favor of curated exemplars, structuring multi-file pipeline outputs for reproducibility, and distilling community feedback into concrete generation constraints that measurably reduced eval-aware and formulaic scenario outputs</li>
+        <li>Identified and designed mitigation experiments for the comparability problem in dynamic multi-turn evaluation — where model-conditioned adversarial follow-ups cause non-equivalent pressure testing across models, confounding cross-model scoring; proposed and tested two solutions: a hybrid fixed-then-dynamic turn design providing a standardized baseline pressure before resuming adaptive generation, and controlled pressure injection ensuring welfare reasoning is consistently targeted regardless of Turn 1 model response</li>
       </ul>
     </div>
 
