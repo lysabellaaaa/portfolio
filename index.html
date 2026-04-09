@@ -1688,15 +1688,26 @@ footer {
     <!-- DeepSurg -->
     <div class="exp-card reveal">
       <div class="exp-header">
-        <div class="exp-role-headline">Research Engineer Trainee <span class="exp-fulltime">Part-time</span></div>
+        <div class="exp-role-headline">Founding AI Engineer — Agents <span class="exp-fulltime">Full-time</span></div>
         <div class="exp-company-name"><a href="https://deepsurg.com" target="_blank">DeepSurg</a> · Remote, Turkey HQ</div>
         <div class="exp-period">Aug 2025 – Present</div>
       </div>
       <p class="exp-desc">Building Scala AI — an intelligent surgical tutor that performs real-time phase recognition, safety assessment, and structured performance feedback for laparoscopic procedures, improving surgical training through procedure-aware analysis.</p>
       <ul class="exp-bullets">
-        <li>Delivered an <strong>engineering-ready literature database</strong> for surgical phase recognition and safety metrics across 5 laparoscopic phases — with per-phase F1 benchmarks, real-time deployment flags, and product-relevance tags</li>
-        <li>Identified <em>Clipping &amp; Cutting</em> as the hardest phase (<span class="gold">F1 ~0.78</span>) and flagged a strategic gap in proprietary bleeding/instrument stability thresholds</li>
-        <li>Onboarding onto the <strong>segmentation retraining pipeline</strong> using the CholecSeg8k dataset — running end-to-end training setup in preparation for cross-video generalization improvements</li>
+        <li>Architected an agentic AI surgical tutor that understands procedural context, identifies the current surgical step, and evaluates safety, quality, efficiency, and bleeding — generating structured training reports with scores, feedback, key moments, and improvement suggestions</li>
+        <li>Fine-tuned a CNN-based image classifier to detect the start and end of the Calot Triangle Dissection phase within full laparoscopic cholecystectomy videos</li>
+        <li>Explored a VLM-only workflow as an alternative approach to building the annotation dataset; collaborated with medical practitioners to lead the surgical segmentation dataset generation process</li>
+        <li>Developed a CV-based, segmentation-driven surgical phase recognition pipeline, with active expansion to cover additional phases:
+          <ul style="margin-top:0.35em;margin-left:1.2em;list-style:disc;">
+            <li>Clipping &amp; Cutting</li>
+            <li>Gallbladder Dissection</li>
+            <li>Gallbladder Packaging</li>
+            <li>Cleaning / Coagulation</li>
+            <li>Gallbladder Retraction</li>
+          </ul>
+        </li>
+        <li>Built a systematic evaluation pipeline to benchmark model performance across phases and metrics</li>
+        <li>To our knowledge, <strong>first-to-market solution</strong> performing end-to-end automated surgical phase recognition and AI-driven trainee assessment at this level</li>
       </ul>
       <div class="tech-stack">
         <span class="tech-tag">Python</span>
